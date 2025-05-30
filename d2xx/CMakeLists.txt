@@ -39,7 +39,7 @@ if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
     set_target_properties(libftd2xx
         PROPERTIES
         IMPORTED_LOCATION ${D2XX_DIR}/linux-arm-v8/libftd2xx-static.a
-        INTERFACE_INCLUDE_DIRECTORIES ${D2XX_DIR}/release
+        INTERFACE_INCLUDE_DIRECTORIES ${D2XX_DIR}/linux-arm-v8
         INTERFACE_COMPILE_DEFINITIONS FTD2XX_STATIC
         INTERFACE_LINK_LIBRARIES pthread)
     return()
