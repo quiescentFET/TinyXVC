@@ -60,6 +60,7 @@ function(txvc_detect_arch output_var)
 "amd64"
 #elif defined(__aarch64__)
 "arm64"
+#else
 #error Unknown architecture
 #endif
 ]===]
