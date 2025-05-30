@@ -58,7 +58,8 @@ function(txvc_detect_arch output_var)
         COMMAND echo [===[
 #if defined(__x86_64__)
 "amd64"
-#else
+#elif defined(__aarch64__)
+"arm64"
 #error Unknown architecture
 #endif
 ]===]
